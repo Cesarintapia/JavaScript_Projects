@@ -24,3 +24,19 @@ function showSlides(n) {                                         //starting func
   slides[slideIndex-1].style.display = "block";                    //performing results
   dots[slideIndex-1].className += " active";
 }
+
+
+function countdown() {
+  var seconds = document.getElementById("seconds") .value;
+  function tick () {
+      seconds = seconds - 1;
+      timer.innerHTML = seconds;
+      var time = setTimeout(tick, 1000);
+      if (seconds == -1) {
+          alert("Time's up!");
+          clearTimeout(time);
+          timer.innerHTML = "";
+      }
+  }
+  tick();
+}
