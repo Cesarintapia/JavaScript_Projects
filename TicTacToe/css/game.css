@@ -1,0 +1,18 @@
+/* This container includes our table and our canvas. */
+.center-container {
+    /* This property sets the width of the container.*/
+    width: 608px;
+    /* This property center our container.*/
+    margin: 0 auto;
+    /* 50 px down from top.*/
+    margin-top: 50px;
+}
+
+table {
+    /* This property collapse table borders into 1 border.*/
+    border-collapse: collapse;
+    /* This hides outers borders on table.*/
+    border-style: hidden;
+}
+
+
