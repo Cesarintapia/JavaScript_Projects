@@ -7,6 +7,9 @@
     /* 50 px down from top.*/
     margin-top: 50px;
 }
+h1 {
+    text-align: center;
+}
 
 table {
     /* This property collapse table borders into 1 border.*/
@@ -15,4 +18,23 @@ table {
     border-style: hidden;
 }
 
+td {
+    /*This property changes the cursor to the index finger hand when we hover td elements*/
+    cursor: pointer;
+    /*This property sets our table border style*/
+    border: 4px solid rgba(202, 169, 3, 0.8);
+    /*This property removes default padding*/
+    padding: 0px;
+    width: 200px;
+    height:200px;
+}
+
+canvas {
+    /*This property sets the position of our canvas to the top left corner of our container*/
+    position: absolute;
+    /*This property places our canvas over the top of our table*/
+    z-index: 10;
+    /*This property makes our canvas invisible*/
+    pointer-events: none;
+}
 
