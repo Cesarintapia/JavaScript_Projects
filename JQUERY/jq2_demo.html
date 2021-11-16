@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--this is the library that we call from javascript-->
+</head>
+<script>
+$(document).ready(function() {                   //inizialiting the function
+    $("html").append(                            //when the the html is ready, the function adding the follow paragraphs
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1> Where is the King-Loro </h1>\
+                    <button id='1'> Kindom 1 </button>\
+                    <button id='2'> Kindom 2 </button>\
+                    <button id='3'> Kindom 3 </button>\
+                    <button id='4'>Kindom 4 </button>\
+                    <button id='5'>Kindom 5 </button>\
+                    </div>\
+            </div>\
+        </body>"
+    );
+    $("#1").css({"color": "red"});             //jquery call Css for style in paragraph 2.
+    $("#2").css({"color": "blue"});
+    $("#3").css({"color": "green"});
+    $("#4").css({"color": "darkblue"});
+    $("#5").css({"color": "grey"});
+    $("#1").click(function() {                 //jquery call function that hiden paragraph 3.
+        $("#1").hide();
+        $("#2").hide();                        //hiden performs.
+        $("#3").hide();                        //hiden performs.
+        $("#4").hide();                        //hiden performs.
+        $("#5").hide();
+    });
+    $("#2").click(function() {                 //jquery call function that hiden paragraph 3.
+        $("#1").hide();
+        $("#2").hide();                        //hiden performs.
+        $("#3").hide();                        //hiden performs.
+        $("#4").hide();                        //hiden performs.
+        $("#5").hide();
+    });
+    $("#4").click(function() {                 //jquery call function that hiden paragraph 3.
+        $("#1").hide();
+        $("#2").hide();                        //hiden performs.
+        $("#3").hide();                        //hiden performs.
+        $("#4").hide();                        //hiden performs.
+        $("#5").hide();
+    });
+    $("#5").click(function() {                 //jquery call function that hiden paragraph 3.
+        $("#1").hide();
+        $("#2").hide();                        //hiden performs.
+        $("#3").hide();                        //hiden performs.
+        $("#4").hide();                        //hiden performs.
+        $("#5").hide();
+    });
+    $("#3").click(function(){
+        $("#1").hide();
+        $("#2").hide();
+        $("#4").hide();
+        $("#5").hide();
+        $("#3").text("Congratulations the Kindom is here!");
+    });
+});
+</script>
+</html>
